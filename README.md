@@ -31,11 +31,13 @@ You need to install [docker](https://www.docker.com/products/docker-desktop "use
 - Go to the root folder of the project and run the following commands (use ```sudo``` if superuser rights are required):
   - ```docker-compose up```
   - Log in to your container with the ```docker exec-it <CONTAINER ID> bash```    
-    command, where <CONTAINER ID> is the container ID named "infra_sp2_web_1". Get your <CONTAINER ID>    
+    command, where <CONTAINER ID> is the container ID named "yamdb_final_web_1". Get your <CONTAINER ID>    
     with the ```docker container ls``` command.
     - Apply django migrate ```python manage.py migrate```    
     - Create superuser: ```python manage.py createsuperuser```   
+    - To collect the static files: ```python manage.py collectstatic```
     - Load the initial data, *if necessary*: ```python manage.py loaddata fixtures.json```
+
    
 Use a request ```http://localhost:8000/api/v1/titles/``` to make sure everything works.
 ### Author:
