@@ -60,6 +60,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         source: "docker-compose.yaml,.env,static/redoc.yaml,nginx/*"
+        rm: true
         target: "app"
   deploy:
    runs-on: ubuntu-latest
