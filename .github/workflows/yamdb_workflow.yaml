@@ -57,7 +57,7 @@ jobs:
         username: ${{ secrets.USER }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSH_KEY }}
-        source: "docker-compose.yaml,nginx/nginx.conf"
+        source: "nginx/nginx.conf"
         target: "test"
   deploy:
    runs-on: ubuntu-latest
