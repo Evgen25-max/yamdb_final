@@ -59,7 +59,6 @@ jobs:
        target: "~/app/"
        script: |
          sudo docker pull evgen25max/yamdb_final
-         sudo docker stop $(sudo docker ps -a -q)
          sudo docker-compose up
   send_message:
     runs-on: ubuntu-latest
