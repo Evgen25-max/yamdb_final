@@ -59,8 +59,8 @@ jobs:
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
-        source: nginx/*
-        target: "test"
+        source: "docker-compose.yaml,nginx/*"
+        target: "app"
   deploy:
    runs-on: ubuntu-latest
    needs: deployz
