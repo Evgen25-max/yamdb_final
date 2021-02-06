@@ -44,12 +44,13 @@ jobs:
         with:
           push: true
           tags: evgen25max/yamdb_final:latest
-  
+
   deployz:
-    name: Build
+    name: scp
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
+    - uses: actions/checkout@master
     - name: copy file via ssh key
       uses: appleboy/scp-action@master
       with:
