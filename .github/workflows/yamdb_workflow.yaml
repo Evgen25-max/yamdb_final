@@ -58,6 +58,7 @@ jobs:
         username: ${{ secrets.USER }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.SSH_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         source: nginx/*
         target: "test"
   deploy:
