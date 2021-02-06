@@ -9,18 +9,21 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
+    image: evgen25max/python:3.8.5
     restart: always
     command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./static:/code/static/
+      - ./media:/code/media/
     expose:
       - "8000"
     depends_on:
       - db
   ngnix:
-    build: ./nginx
+    image: evgen25max/ngnix:1.19.6
     volumes:
-      - ./static:/home/static/
-      - ./media:/home/media/
+      - ./static:/static/
+      - ./media:/media/
     depends_on:
       - web
     ports:
