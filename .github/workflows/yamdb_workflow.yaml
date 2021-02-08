@@ -102,7 +102,7 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: ${{ github.workflow }} в ветку {{ github.ref }} успешно выполнен!
+          message: ${{ github.workflow }} в ветку ${{ github.ref }} успешно выполнен!
   send_message_no_master:
     name: send_message_no_master_branch
     if: github.ref != 'refs/heads/master'
