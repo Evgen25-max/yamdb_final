@@ -1,3 +1,5 @@
+![](https://github.com/Evgen25-max/yamdb_final/workflows/yamdb_final-app/badge.svg)
+
 # Yambd. Yandex Praktikum - sprint 11
 Implementation of the API for the YaMDb service - a database of reviews of movies, books, and music.
 The YaMDb project collects user reviews of works of art. The works are divided into categories: "Books", "Movies", " Music»
@@ -44,5 +46,5 @@ Use a request ```http://localhost:8000/api/v1/titles/``` to make sure everything
 - GitHub:  [github.com/Evgen25-max](https://github.com/Evgen25-max)
 
 
-![example workflow file path](https://github.com/Evgen25-max/yamdb_final/workflows/yamdb_final-app/badge.svg)
+
 
