@@ -41,7 +41,9 @@ You need to install [docker](https://www.docker.com/products/docker-desktop "use
     - Load the initial data, *if necessary*: ```python manage.py loaddata fixtures.json```
 
    
-Use a request ```http://localhost:8000/api/v1/titles/``` to make sure everything works.
+Use a request ```http://localhost:8000/api/v1/titles/``` to make sure everything works.    
+
+Example to see: [redoc](http://130.193.43.240/redoc/), [api/v1/titles](http://130.193.43.240/api/v1/titles/)
 ### Author:
 - GitHub:  [github.com/Evgen25-max](https://github.com/Evgen25-max)
 
