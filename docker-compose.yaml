@@ -17,7 +17,7 @@ services:
       - ./media:/code/media/
     depends_on:
       - db
-  ngnix:
+  nginx:
     image: nginx:1.19.6
     restart: always
     volumes:
